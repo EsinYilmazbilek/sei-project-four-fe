@@ -46,7 +46,7 @@ function CocktailShow() {
       }
     }
     getData()
-  }, [cocktailId, profileId, hasSaved])
+  }, [cocktailId, profileId])
 
   React.useEffect(() => {
     fetchCocktail()

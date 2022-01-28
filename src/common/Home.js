@@ -33,7 +33,7 @@ function Home() {
   React.useEffect(() => {
     setTimeout(() => {
       setTimedPopUp((true))
-    }, 2000)
+    }, 6000)
   }, [])
 
   const masonryOptions = {
