@@ -37,6 +37,7 @@ function CocktailShow() {
           const ownerId = String(saved.owner.id)
           if (ownerId === profileId){
             setHasSaved(true)
+            setSaveId(saved.id)
           }
           console.log(saved)
           return
@@ -90,6 +91,10 @@ function CocktailShow() {
 
   const handleDeleteClick = async (e) => {
     e.preventDefault()
+    // if (saveId === null) {
+    //   console.log(cocktail.savedBy.find(save => 
+    //     save.owner.id === ))
+    // }
     try {
       const removeClick = await removeSaves(cocktailId, saveId, cocktailData)
       console.log(removeClick.data)
