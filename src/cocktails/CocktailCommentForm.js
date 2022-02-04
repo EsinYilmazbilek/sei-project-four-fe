@@ -9,6 +9,7 @@ function CocktailCommentForm({ fetchCocktail, setCocktail }) {
   const { cocktailId } = useParams()
   const profileId = getId()
 
+  console.log(isError)
   
   const cocktailData = {
     content: commentValue,
